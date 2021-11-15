@@ -3,7 +3,7 @@
 ======================*/
 
 body{
-    background-color: hsl(226 63% 45%);
+    background-color: hsl(226, 63%, 50%);
     display:flex; 
     flex-direction:column;    
     margin: 1em auto;
@@ -43,15 +43,11 @@ h1, h2, h3, h4, h5, h6, a, p{
     color: hsl(0, 0%, 100%);
 }
 
-h1, h2, h3, h4 {
-    font-family: "Ubuntu";
+h1, h2, h3, h4, a, td, p, button {
+    font-family: "Montserrat";
 }
 
 h5, h6 {
-    font-family: "Ubuntu Condensed";
-}
-
-a, td, p, button{
     font-family: "Ubuntu";
 }
 
@@ -109,7 +105,7 @@ img {
 }
 
 .logo svg path{
-    fill:hsl(19, 100%, 50%);
+    fill:hsl(41, 98%, 60%);
 }
 
 /*====================

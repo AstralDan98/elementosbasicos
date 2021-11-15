@@ -1,22 +1,38 @@
 <!doctype html>
 <html lang="es">
+    <!-- https://www.w3schools.com/html/html_head.asp -->
+    <!-- El codigo "head" es el código que lee la pagina web pero no afecta de forma visual al contenido de esta-->
     <head>
+        <!-- Las etiquetas meta van a dar información a los navegadores y buscadores sobre los aspectos relevantes de tu página web-->
+      
+        <!-- El meta charset define la cofidicación de carácteres que usará nuestra web. Por ejemplo: vamos a escribir con carácteres latinos (utf8)-->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
 
-		<title>Título</title>
-		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+        <!-- meta viewport es la que va a permitir que nuestro diseño sea responsive, que se adapta a distintas pantallas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- shortcut nos permitirá añadir un icono (favicon) que aparecerá en la pestaña de nuestra pagina web. Podemos añadir tanto un enlace a un lugar de internet que tenga una
+        imagen o indicar en que carpeta de nuestro ordenador o servidor se encuentra esa imagen. Ha de ser en integros de  (8x8, 16x16, 32x32, 64x64, etc.). Tambien está feo cargar la imagen
+        del icono desde una página web externa, es mejor tenerla dentro de la carpeta repositorio del proyecto -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- Título aparecerá tanto en las busquedas de Google como en la pestaña de la página. Un máximo de 65 carácteres. Recomendado entre 50 y 60-->
+        <title>The Beehiver</title>
+        
+        <!-- meta description, el texto que ponemos en el atributo content es el que aparecerá en los resultados de Google-->
+		<meta name="description" content="Productos para los iniciados en la apicultura y profesionales">
+        <!-- meta keywords, son las palabras clave que se relacionarán con tu proyecto-->
         <meta name="keywords" 	 content="palabras clave, separadas, por comas">
 
+        <!-- Los siguientes metas están solo comentados, no son funcionales. Pero son los metas usados para conectar tu proyecto con Facebook-->
 		<!-- 
-        <meta property="fb:app_id"        content="" /> 
-		<meta property="og:url"           content="" />
+        <meta property="fb:app_id"        content="numeroidentificadorquenosdaFacebook" /> 
+		<meta property="og:url"           content="www.loquesea.com" />
 		<meta property="og:type"          content="website" />
-		<meta property="og:title"         content=""/>
-		<meta property="og:description"   content="" /> 
+		<meta property="og:title"         content="Título"/>
+		<meta property="og:description"   content="descripción de nuestra web" /> 
         -->
-
+        <!-- Carga de los archivos de CSS, en el atributo href vamos a señalar su ubicación en una carpeta de nuestro servidor-->
         <link href="style/normalize.css" rel="stylesheet">
         <link href="style/main.css" rel="stylesheet">
     </head>
@@ -24,19 +40,19 @@
     <body>
         <header>
             <div class="header-element logo">
-                <svg viewbox="0 0 24 24">
-                    <path d="M18.36,2.64C20,2.64 21.36,4 21.36,5.64C21.36,7.29 20,8.64 18.36,8.64C16.71,8.64 15.36,7.29 15.36,5.64C15.36,5.34 15.41,5.06 15.5,4.8C14.43,4.29 13.25,4 12,4A8,8 0 0,0 4,12L4.04,12.84L2.05,13.05L2,12A10,10 0 0,1 12,2C13.69,2 15.28,2.42 16.67,3.16C17.16,2.83 17.74,2.64 18.36,2.64M18.36,4.64A1,1 0 0,0 17.36,5.64A1,1 0 0,0 18.36,6.64C18.92,6.64 19.36,6.19 19.36,5.64C19.36,5.08 18.92,4.64 18.36,4.64M5.64,15.36C7.29,15.36 8.64,16.71 8.64,18.36C8.64,18.66 8.59,18.94 8.5,19.2C9.57,19.71 10.75,20 12,20A8,8 0 0,0 20,12L19.96,11.16L21.95,10.95L22,12A10,10 0 0,1 12,22C10.31,22 8.72,21.58 7.33,20.84C6.84,21.17 6.26,21.36 5.64,21.36C4,21.36 2.64,20 2.64,18.36C2.64,16.71 4,15.36 5.64,15.36M5.64,17.36C5.08,17.36 4.64,17.81 4.64,18.36C4.64,18.92 5.08,19.36 5.64,19.36A1,1 0 0,0 6.64,18.36A1,1 0 0,0 5.64,17.36M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.6 13V12.9L11.3 12.6H11.2L9.6 12C10 11.7 10.4 11.5 10.9 11.5C11.4 11.5 11.9 11.7 12.3 12.1C12.7 12.5 12.9 12.9 12.9 13.4C12.9 13.9 12.8 14.3 12.4 14.7L11.6 13M9.7 19.3C9.4 18.3 9.6 17.1 10.4 15.5L11.6 18.6C11.8 19.2 11.6 19.6 11 19.9C10.4 20.2 10 20 9.7 19.3M4.1 13.1C4.3 12.5 4.7 12.3 5.3 12.5L8.5 13.7C6.9 14.5 5.7 14.7 4.7 14.4C4.1 14.1 3.9 13.7 4.1 13.1M12 8.1H11V9.5H10.6C9.5 9.5 8.6 9.9 7.8 10.7L7.4 11.3L6 10.5C5.7 10.4 5.4 10.4 5 10.4C4.4 10.4 3.8 10.6 3.3 11S2.4 11.8 2.2 12.4C2 13.1 2 13.7 2.2 14.4C2.5 15.1 2.8 15.6 3.3 15.9C2.9 17.4 3.2 18.7 4.3 19.8C5.1 20.6 6 21 7.1 21C7.6 21 7.9 21 8.2 20.9C8.8 21.7 9.6 22.2 10.6 22.2C10.9 22.2 11.3 22.2 11.6 22.1C12.2 21.9 12.6 21.5 13 21C13.4 20.4 13.6 19.9 13.6 19.3C13.6 18.9 13.6 18.6 13.5 18.3L12.9 16.9L13.5 16.5C14.3 15.7 14.7 14.6 14.6 13.4H16V12.4H14.4C14 11.2 13.2 10.4 12 10V8.1M17.3 6.8C17.1 6.6 17 6.3 17 6.1C17 5.8 17.1 5.6 17.3 5.4C17.5 5.2 17.7 5.1 18 5.1S18.5 5.2 18.7 5.4C18.9 5.5 19 5.8 19 6.1C19 6.4 18.9 6.6 18.7 6.8C18.5 7 18.3 7 18 7S17.5 7 17.3 6.8M20.7 4.1H19.6L19.3 3.2C19.1 2.5 18.7 2.2 18 2.2C17.3 2.2 16.8 2.5 16.7 3.2L16.4 4.1H15.3C14.7 4.1 14.3 4.4 14 5C13.8 5.6 14 6.1 14.6 6.5L15.5 7L15.1 8.2C14.9 8.6 15 9 15.2 9.4C15.5 9.8 15.8 10 16.3 10C16.7 10 17 9.9 17.2 9.7L18 9.1L18.8 9.8C19 9.9 19.3 10 19.7 10C20.2 10 20.5 9.8 20.8 9.4C21 9 21.1 8.6 20.9 8.2L20.5 7L21.3 6.5C21.9 6.1 22.1 5.6 21.9 5C21.7 4.3 21.3 4.1 20.7 4.1Z" />
                 </svg>
             </div>
 
             <div class="header-element title">
-                <h1>Título</h1>
+                <h1>The Beehiver</h1>
             </div>
         </header>
 
         <main>
             <div class="main-element subtitle">
-                <h2>Subtítulo</h2>
+                <h2>Productos de apicultura</h2>
             </div>
 
             <div class="main-element crud">
@@ -97,6 +113,17 @@
                                 <input type="text" name="name">
                             </div>
                         </div>
+                       
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
+                                <label for="name">Apellidos</label>
+                            </div>
+
+                            <div class="crud__form-input">
+                                <input type="text" name="name">
+                            </div>
+                        </div>
+                     
 
                         <div class="crud__form-element">
                             <button class="crud__store-button">Guardar</button>
@@ -111,21 +138,23 @@
                 <p>@2048</p>
             </div>
             <div class="footer-element author">
-                <a href="https://thispersondoesnotexist.com/"><p>enlace a una web de verdad</p></a>
+                <a href="https://thispersondoesnotexist.com/"><p>Web de verdad</p></a>
             </div>
         </footer>
             
         <script src="js/main.js"></script>
 
+        <!-- vv Script para añadir fuentes vía JavaScript vv -->
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             WebFont.load({
                 google: {
-                    families: ['Ubuntu:700,700i', 'Ubuntu+Condensed:400']
+                    families: ['Ubuntu:700,700i', 'Ubuntu+Condensed:400', 'Montserrat']
                 }
             });        
         </script>
 
+        <!-- ^^En serio, quedate con este Script^^ -->
         <!-- 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
