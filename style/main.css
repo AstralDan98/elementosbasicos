@@ -14,7 +14,7 @@ body{
 header{
     display: flex;
     height: 10vh;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 main{
@@ -84,11 +84,31 @@ a:focus, a:hover {
 }
 
 /*====================
-========Image=========
+=========Table========
 ======================*/
 
-img {
-    max-width: 100%;
+table { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:hsl(0, 0%, 100%);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th { 
+    border: 0.1em solid hsl(0, 0%, 100%);
+    text-align: left;
+    padding: 0.2em; 
+}
+/*Para texto que expande la tabla*/
+td{
+    max-width: 5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+tr:nth-child(even){
+    background-color:hsl(226, 85%, 62%);
 }
 
 /*====================
@@ -106,6 +126,27 @@ img {
 
 .logo svg path{
     fill:hsl(41, 98%, 60%);
+}
+
+/*====================
+========Menu=========
+======================*/
+
+.menu svg{
+    height: 3em;
+    width: 3em;
+}
+
+.menu:hover svg{
+    cursor: pointer;
+}
+
+.menu svg path{
+    fill:hsl(41, 98%, 60%);
+}
+   
+.menu:hover svg path {
+    fill: hsl(226, 63%, 25%);
 }
 
 /*====================
@@ -259,6 +300,12 @@ img {
 .footer-element p{
     text-align: center;
 }
+
+.author p:hover{
+    color: hsl(41, 98%, 60%);
+}
+
+
 
 @media (max-width:479px) {
 

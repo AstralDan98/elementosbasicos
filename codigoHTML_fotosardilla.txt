@@ -1,0 +1,48 @@
+
+            <div class="main-element crud">
+                <div class="crud__table">
+                    <div class="crud__table-grid">
+                        <div class="crud__table-grid-element">
+                            <img src="images/1.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-grid-element">
+                            <img src="images/2.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-grid-element">
+                            <img src="images/3.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-grid-element">
+                            <img src="images/4.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-grid-element">
+                            <img src="images/5.jpg" alt="ardillas">
+                        </div>
+                    </div>
+    
+                    <div class="crud__table-flex">
+                        <div class="crud__table-flex-element">
+                            <img src="images/1.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-flex-element">
+                            <img src="images/2.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-flex-element">
+                            <img src="images/3.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-flex-element">
+                            <img src="images/4.jpg" alt="ardillas">
+                        </div>
+
+                        <div class="crud__table-flex-element">
+                            <img src="images/5.jpg" alt="ardillas">
+                        </div>
+                    </div>
+                </div>
+    
