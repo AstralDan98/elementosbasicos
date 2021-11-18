@@ -84,34 +84,6 @@ a:focus, a:hover {
 }
 
 /*====================
-=========Table========
-======================*/
-
-table { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:hsl(0, 0%, 100%);
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th { 
-    border: 0.1em solid hsl(0, 0%, 100%);
-    text-align: left;
-    padding: 0.2em; 
-}
-/*Para texto que expande la tabla*/
-td{
-    max-width: 40%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-tr:nth-child(even){
-    background-color:hsl(226, 85%, 62%);
-}
-
-/*====================
 =========Logo=========
 ======================*/
 
@@ -181,42 +153,82 @@ tr:nth-child(even){
 
 .crud{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    width: 100%;  
 }
 
-.crud__form-element{
+.crud__form .crud__form-element .crud__form-one-column{
+    width: 100%;
+}
+
+.crud__table, .crud__form{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:hsl(0, 0%, 100%);
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+}
+
+.crud__form{
+    display: flex;
     flex-wrap: nowrap;
+}
+.crud__form-element{
     margin: 0.5em;
 }
     
 .crud__form-four-columns{
     display: flex;
     flex-direction: row;
-    margin-bottom: 1em 0;
-    width: 25%;
+}
+
+.crud__form .crud__form-element .crud__form-four-columns{
+    width: 24%;
 }
 .crud__form-three-columns{
     display: flex;
     flex-direction: row;
     margin: 1em 0;
-    width: 33.33%;
 }
-
+.crud__form .crud__form-element .crud__form-three-columns{
+    width: 32%;
+}
 .crud__form-two-columns{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 1em 0;
     justify-content:space-between;
-    width: 50%;
+}
+
+.crud__form .crud__form-element .crud__form-two-columns{
+    width: 49%;
 }
 .crud__form-one-column{
     display: flex;
     flex-direction: row;
-    margin: 1em 0;
-    width: 100%;
 }
 
+.crud__form, .crud__form-one-column. .crud__form-element{
+    width: 100%;
+}
+.crud__table td,.crud__table th { 
+    border: 0.1em solid hsl(0, 0%, 100%);
+    text-align: left;
+    padding: 0.2em; 
+}
+/*Para texto que expande la tabla*/
+.crud__table td{
+    max-width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.crud__table tr:nth-child(even){
+    background-color:hsl(226, 85%, 62%);
+}
 
 /*====================
 ========FOOTER========
