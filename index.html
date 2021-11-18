@@ -62,10 +62,9 @@
 
         <main>
             <div class="main-element subtitle">
-                <h2>Burgers not actually made with bees</h2>
+                <h2>Table table table</h2>
             </div>
-            
-            <div class="main-element crud">
+            <div class="crud">
                 <div class="crud__table">
                     <table>
                         <tr>
@@ -93,33 +92,66 @@
                 </div>
 
                 <div class="crud__form">
-                    <form class="crud__admin-form" id="crud__user-form" action="/users/create" autocomplete="off"> 
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="name">User Name</label>
+                    <form> 
+                        <div class="crud__form-four-columns">
+                            <div class="crud__form-element">
+                                <h5>User ID</h5>
+                                <input type="text" id="user_id" name="user_id">
                             </div>
-
-                            <div class="crud__form-input">
-                                <input type="text" name="name">
+                            <div class="crud__form-element">
+                                <h5>Password</h5>
+                                <input type="password" id="user_psswrd" name="user_psswrd">
+                            </div>
+                            <div class="crud__form-element">
+                                <h5>Email</h5>
+                                <input type="email" id="user_email" name="user_email">
+                            </div>
+                            <div class="crud__form-element">
+                                <h5>Birthday</h5>   
+                                <input type="date" id="day-of-birth" name="Day of Birth">
                             </div>
                         </div>
-                    
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="name">Password</label>
+                        <div class="crud__form-three-columns">
+                            <div class="crud__form-element"><h5>Input a value from 0 to 10</h5>                              
+                                <input type="number" id="quantity" name="cuantity" min="0" max="10">
                             </div>
-
-                            <div class="crud__form-input">
-                                <input type="password" name="name">
+                            <div class="crud__form-personaldata__file"><h5>License Photo</h5>   
+                            <input type="file">
+                            </div>
+                        
+                            <div class="crud__form-element"><h5>Allergies</h5>
+                            <select name="answer" id="answer">
+                                <option value="yes">Yes</option>
+                                <option value="yesnt">No</option>
+                            </select>
+                            </div>
+                        </div>    
+                        <div class="crud__form-two-columns">
+                            <div class="crud__form-element"><h5>Input Radio</h5>
+                            <input type="radio" id="icrecream" name="fav_dessert" value="icrecream">
+                            <lable for="icrecream">Ice Cream</lable>
+                            <input type="radio" id="pudding" name="fav_dessert" value="pudding">
+                            <lable for="pudding">Pudding</lable>
+                            <input type="radio" id="bread_banana" name="fav_dessert" value="bread_banana">
+                            <lable for="bread_banana">Banana Bread</lable>
+                            </div> 
+                            <div class="crud__form-element"><h5>Input Checkbox</h5>
+                            <input type="checkbox" id="trvl_1" name="trvl_1" value="Mountain">
+                            <lable for="trvl_1">Mountain</lable>
+                            <input type="checkbox" id="trvl_2" name="trvl_2" value="Country-Side">
+                            <lable for="trvl_2">Country Side</lable>
+                            <input type="checkbox" id="trvl_3" name="trvl_3" value="Lake">
+                            <lable for="trvl_3">Lake</lable>
                             </div>
                         </div>
-
-                        <div class="crud__form-element">
-                            <button class="crud__store-button">Sign In</button>
-                        </div>
-                    </form>
+                        <div class="crud__form-one-coulmn"><h3>Please, input your Lorem Ipsum</h3>
+                            <div class="crud__form-element">
+                                <textarea id="textarea" name="biography" rows="10" cols="100"></textarea>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
-            </div>
+            </div>    
         </main>
 
         <footer>

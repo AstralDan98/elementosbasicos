@@ -1,0 +1,25 @@
+                <div class="columns__table">
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>eMail</th>
+                        </tr>
+
+                        <tr>
+                            <td>45694086D</td>
+                            <td>Daniel</td>
+                            <td>daniel.ruiz.cabanellas@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>45674438K</td>
+                            <td>Kevin</td>
+                            <td>kev_monroe_23@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>753256129T</td>
+                            <td>Chiara</td>
+                            <td>CR_nerfer-fox.com</td>
+                        </tr>
+                    </table>
+                </div>
