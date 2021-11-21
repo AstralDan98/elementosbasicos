@@ -162,19 +162,21 @@ a:focus, a:hover {
 }
 
 .crud__table, .crud__form{ 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Open Sans', sans-serif;;
     color:hsl(0, 0%, 100%);
     border-collapse: collapse;
     width: 100%;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    font-weight: 800;
+    font-size: 120%;
 }
 
 .crud__form{
     display: flex;
     flex-wrap: nowrap;
 }
-.crud__form-element{
+.crud__form-element, .crud__form-element-lable{
     margin: 0.5em;
 }
     
@@ -197,7 +199,7 @@ a:focus, a:hover {
 .crud__form-two-columns{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 1em 0;
     justify-content:space-between;
 }
@@ -205,14 +207,20 @@ a:focus, a:hover {
 .crud__form .crud__form-element .crud__form-two-columns{
     width: 49%;
 }
+
 .crud__form-one-column{
     display: flex;
     flex-direction: row;
 }
 
-.crud__form, .crud__form-one-column. .crud__form-element{
+.crud__form, .crud__form-one-column, .crud__form-element{
     width: 100%;
 }
+
+/*====================
+========TABLE=========
+======================*/
+
 .crud__table td,.crud__table th { 
     border: 0.1em solid hsl(0, 0%, 100%);
     text-align: left;
